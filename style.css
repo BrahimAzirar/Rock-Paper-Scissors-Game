@@ -1,0 +1,73 @@
+* {
+    margin: 0;
+    padding: 0;
+    outline: none;
+    box-sizing: border-box;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #eee;
+}
+
+#root {
+    width: 500px;
+    height: 500px;
+    background-color: white;
+    border-radius: 7px;
+    box-shadow: 0 2px 7px 1px #c1becf;
+    padding: 40px 0;
+}
+
+#root > div {
+    width: 75%;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+#root > div:first-of-type img {
+    width: 40%;
+    margin-bottom: 30px;
+}
+
+#root > div:first-of-type p {
+    width: 100%;
+    font-size: 2.5rem;
+    text-align: center;
+    font-weight: bold;
+}
+
+#root > div:last-of-type {
+    justify-content: space-evenly;
+    margin-top: 50px;
+}
+
+#root > div:last-of-type > div {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+}
+
+#root > div:last-of-type img {
+    width: 50px;
+}
+
+#root > div:last-of-type p {
+    margin-top: 5px;
+}
+
+.HandLeft {
+    transform: rotate(90deg);
+}
+
+.HandRight {
+    transform: rotate(-90deg) rotateY(180deg);
+}
