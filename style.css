@@ -31,8 +31,20 @@ body {
     justify-content: space-between;
 }
 
-#root > div:first-of-type img {
+#root > div:first-of-type > div {
     width: 40%;
+}
+
+#root > div:first-of-type > div:first-of-type {
+    transform-origin: left center;
+}
+
+#root > div:first-of-type > div:last-of-type {
+    transform-origin: right center;
+}
+
+#root > div:first-of-type img {
+    width: 100%;
     margin-bottom: 30px;
 }
 
@@ -70,4 +82,36 @@ body {
 
 .HandRight {
     transform: rotate(-90deg) rotateY(180deg);
+}
+
+.HandLeftAnimition {
+    animation: HandLeftAnimition .7s ease-out 3;
+}
+
+.HandRightAnimition {
+    animation: HandRightAnimition .7s ease-out 3;
+}
+
+@keyframes HandLeftAnimition {
+    0% {
+        transform: rotate(0deg);
+    }
+    50% {
+        transform: rotate(12deg);
+    }
+    100% {
+        transform: rotate(0deg);
+    }
+}
+
+@keyframes HandRightAnimition {
+    0% {
+        transform: rotate(0deg);
+    }
+    50% {
+        transform: rotate(-12deg);
+    }
+    100% {
+        transform: rotate(0deg);
+    }
 }

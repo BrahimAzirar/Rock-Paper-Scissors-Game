@@ -22,7 +22,13 @@ startGame.forEach(ele => {
     ele.onclick = () => {
         HandRight.src = "/images/Rock.svg";
         HandLeft.src = "/images/Rock.svg";
-        GuessTheShape();
-        GetTheShape(ele.firstElementChild.src);
+        HandRight.parentElement.classList.add("HandRightAnimition");
+        HandLeft.parentElement.classList.add("HandLeftAnimition");
+        setTimeout(() => {
+            HandRight.parentElement.classList.remove("HandRightAnimition");
+            HandLeft.parentElement.classList.remove("HandLeftAnimition");
+            GuessTheShape();
+            GetTheShape(ele.firstElementChild.src);
+        }, 2000);
     };
 });
