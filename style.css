@@ -23,7 +23,7 @@ body {
     padding: 40px 0;
 }
 
-#root > div {
+#root>div {
     width: 75%;
     margin: 0 auto;
     display: flex;
@@ -31,36 +31,36 @@ body {
     justify-content: space-between;
 }
 
-#root > div:first-of-type > div {
+#root>div:first-of-type>div {
     width: 40%;
 }
 
-#root > div:first-of-type > div:first-of-type {
+#root>div:first-of-type>div:first-of-type {
     transform-origin: left center;
 }
 
-#root > div:first-of-type > div:last-of-type {
+#root>div:first-of-type>div:last-of-type {
     transform-origin: right center;
 }
 
-#root > div:first-of-type img {
+#root>div:first-of-type img {
     width: 100%;
     margin-bottom: 30px;
 }
 
-#root > div:first-of-type p {
+#root>div:first-of-type p {
     width: 100%;
     font-size: 2.5rem;
     text-align: center;
     font-weight: bold;
 }
 
-#root > div:last-of-type {
+#root>div:last-of-type {
     justify-content: space-evenly;
     margin-top: 50px;
 }
 
-#root > div:last-of-type > div {
+#root>div:last-of-type>div {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -68,11 +68,11 @@ body {
     cursor: pointer;
 }
 
-#root > div:last-of-type img {
+#root>div:last-of-type img {
     width: 50px;
 }
 
-#root > div:last-of-type p {
+#root>div:last-of-type p {
     margin-top: 5px;
 }
 
@@ -85,20 +85,22 @@ body {
 }
 
 .HandLeftAnimition {
-    animation: HandLeftAnimition .7s ease-out 3;
+    animation: HandLeftAnimition .6s ease-out 3;
 }
 
 .HandRightAnimition {
-    animation: HandRightAnimition .7s ease-out 3;
+    animation: HandRightAnimition .6s ease-out 3;
 }
 
 @keyframes HandLeftAnimition {
     0% {
         transform: rotate(0deg);
     }
+
     50% {
         transform: rotate(12deg);
     }
+
     100% {
         transform: rotate(0deg);
     }
@@ -108,9 +110,11 @@ body {
     0% {
         transform: rotate(0deg);
     }
+
     50% {
         transform: rotate(-12deg);
     }
+
     100% {
         transform: rotate(0deg);
     }
